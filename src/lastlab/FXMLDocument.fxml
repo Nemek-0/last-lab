@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lastlab.FXMLDocumentController">
+   <children>
+      <TextField fx:id="textFieldBeta" layoutX="50.0" layoutY="26.0" prefHeight="25.0" prefWidth="45.0" text="1" />
+      <TextField fx:id="textFieldGamma" layoutX="50.0" layoutY="62.0" prefHeight="25.0" prefWidth="45.0" text="1" />
+      <TextField fx:id="textFieldA" layoutX="50.0" layoutY="149.0" prefHeight="25.0" prefWidth="45.0" text="-10" />
+      <TextField fx:id="textFieldB" layoutX="140.0" layoutY="149.0" prefHeight="25.0" prefWidth="45.0" text="10" />
+      <TextField fx:id="textFieldC" layoutX="50.0" layoutY="200.0" prefHeight="25.0" prefWidth="45.0" text="-10" />
+      <TextField fx:id="textFieldD" layoutX="140.0" layoutY="200.0" prefHeight="25.0" prefWidth="45.0" text="10" />
+      <TextField fx:id="textFieldN" layoutX="50.0" layoutY="256.0" prefHeight="25.0" prefWidth="45.0" text="1" />
+      <Label layoutX="22.0" layoutY="25.0" text="β">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="21.0" layoutY="61.0" text="γ">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="20.0" layoutY="148.0" text="A">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="114.0" layoutY="148.0" text="B">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="21.0" layoutY="199.0" text="C">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="112.0" layoutY="199.0" text="D">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="21.0" layoutY="255.0" text="n">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="114.0" layoutY="255.0" text="m">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="293.0" text="X0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="114.0" layoutY="293.0" text="p">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="16.0" layoutY="559.0" prefHeight="27.0" prefWidth="199.0" text="Кузнецов Сергей ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldM" layoutX="140.0" layoutY="256.0" prefHeight="25.0" prefWidth="45.0" text="1" />
+      <TextField fx:id="textFieldX0" layoutX="50.0" layoutY="294.0" prefHeight="25.0" prefWidth="45.0" text="1" />
+      <TextField fx:id="textFieldP" layoutX="140.0" layoutY="294.0" prefHeight="25.0" prefWidth="45.0" text="15" />
+      <Button layoutX="53.0" layoutY="529.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Построить" />
+      <AnchorPane fx:id="lineChartXY" layoutX="230.0" layoutY="10.0" prefHeight="560.0" prefWidth="760.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <LineChart fx:id="lineChart" prefHeight="560.0" prefWidth="760.0" AnchorPane.bottomAnchor="-40.0" AnchorPane.leftAnchor="-45.0" AnchorPane.rightAnchor="-15.0" AnchorPane.topAnchor="-15.0">
+              <xAxis>
+                <NumberAxis side="BOTTOM" fx:id="xAxis" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxis" side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </AnchorPane>
+      <Label fx:id="labelError" layoutX="17.0" layoutY="404.0" prefHeight="38.0" prefWidth="184.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

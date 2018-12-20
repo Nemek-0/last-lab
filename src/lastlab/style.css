@@ -1,0 +1,22 @@
+.chart-series-line {
+    -fx-stroke-width: 0; /* толщина */
+    
+    
+    
+}
+.chart-line-symbol {
+    -fx-background-radius: 1px;
+    -fx-padding: 1.5px;
+}
+
+.default-color0.chart-line-symbol { /* solid square */
+    -fx-background-color: #ff0000;
+    -fx-background-radius: 0;
+}
+.default-color1.chart-line-symbol {  /*solid circle*/ 
+    -fx-background-color: #0000ff;
+    -fx-background-radius: 1.5px;
+    -fx-padding: 1.5px;
+    
+}
+
